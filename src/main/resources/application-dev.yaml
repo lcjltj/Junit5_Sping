@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://lcj0821.synology.me:543/postgres
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQL10Dialect
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
